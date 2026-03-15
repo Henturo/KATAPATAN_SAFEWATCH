@@ -8,6 +8,8 @@ export default function App() {
   const [currentView, setCurrentView] = useState('landing');
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  console.log('App.jsx: Current View:', currentView);
+
   // Sync dark mode class with state
   useEffect(() => {
     if (isDarkMode) {
